@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #7F00FF 0%, #23e6c5 100%);
+}
+
+#botao-adicionar {
+  background: #7F00FF;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  float: right;
+}
+
+#botao-adicionar:hover {
+  opacity: 0.8;
+}
+#botao-adicionar:active {
+  opacity: 0.6;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 541px;
+  height: auto;
+  border-radius: 5px;
+  margin: 100px auto 100px;
+  padding: 30px 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.50);
+}
+
+.container h3 {
+  margin-bottom: 10px;
+  color: #7F00FF;
+  font-weight: 700;
+    
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+
+#input-principal {
+  width: 342px;
+  height: 40px;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+#tarefas {
+  width: 100%;
+  list-style: none;
+  margin-top: 60px;
+}
+
+.item-tarefa {
+  background: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px 45px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.nome-tarefa {
+  color: #000000;
+  font-size: 15px;
+}
+
+.botao-delete {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fa-trash {
+  color: red;
+}
+
+.botao-arrow {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fa-circle-arrow-right {
+  color: #7F00FF;
+}
+
+.item-tarefa:hover .botao-delete {
+  opacity: 1;
+}
+
+.item-tarefa:hover .botao-arrow {
+  opacity: 1;
+}
+
+.concluido {
+  background-color: greenyellow;
+  text-decoration: line-through;
+}
+
+.rodape {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    width: 450px;
+  }
+
+  #input-principal{
+    width: 300px;
+  }
+
+}
+
+
+@media screen and (max-width: 450px){
+  .container {
+    width: 320px;
+  }
+
+  #input-principal{
+    width: 280px;
+  }
+
+}
