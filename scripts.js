@@ -7,7 +7,7 @@ reloadTask()
 
 function viewTask() {
   let newLi = ''
-  arrayAddTask.forEach((addTask, index) => {
+  arrayAddTask.findIndex((addTask, index) => {
 
     newLi = newLi + `
     <li class="item-tarefa ${addTask.finish == true && "concluido"}">
@@ -33,7 +33,7 @@ function delTask(index) {
 
 function addTask() {
   arrayAddTask.push({
-    addTask: '-> ' + input.value,
+    addTask: input.value,
     finish: false
   })
 
