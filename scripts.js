@@ -34,7 +34,7 @@ function delTask(index) {
 
 function addTask() {
   arrayAddTask.push({
-    addTask: input.value + '',
+    addTask: input.value + 1,
     finish: false
   })
 
