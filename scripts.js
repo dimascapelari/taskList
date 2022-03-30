@@ -2,7 +2,6 @@ let input = document.getElementById('input-principal')
 let button = document.getElementById('botao-adicionar')
 let task = document.getElementById('nome-tarefa-id')
 let fullList = document.getElementById('tarefas')
-
 let arrayAddTask = []
 reloadTask()
 
