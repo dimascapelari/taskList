@@ -3,7 +3,7 @@ let button = document.getElementById('botao-adicionar')
 let task = document.getElementById('nome-tarefa-id')
 let fullList = document.getElementById('tarefas')
 let arrayAddTask = []
-reloadTask()
+
 
 function viewTask() {
   let newLi = ''
@@ -57,3 +57,4 @@ function reloadTask() {
 
 button.addEventListener('click', addTask)
 
+reloadTask()
