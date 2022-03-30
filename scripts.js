@@ -7,7 +7,7 @@ let arrayAddTask = []
 reloadTask()
 
 function viewTask() {
-  let newLi = '1'
+  let newLi = ''
   arrayAddTask.forEach((addTask, index) => {
 
     newLi = newLi + `
