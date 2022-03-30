@@ -26,7 +26,6 @@ function viewTask() {
 
 }
 
-reloadTask()
 
 function delTask(index) {
   arrayAddTask.splice(index, 1)
@@ -56,6 +55,6 @@ function reloadTask() {
 
   viewTask()
 }
-
+reloadTask()
 button.addEventListener('click', addTask)
 
