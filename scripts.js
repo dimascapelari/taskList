@@ -3,14 +3,14 @@ let button = document.getElementById('botao-adicionar')
 let task = document.getElementById('nome-tarefa-id')
 let fullList = document.getElementById('tarefas')
 
-let arrayAddTask = []
+let arrayAddTask = ['']
 reloadTask()
 
 function viewTask() {
   let newLi = ''
   arrayAddTask.forEach((addTask, index) => {
 
-    newLi = newLi + '' + `
+    newLi = newLi + `
     <li class="item-tarefa ${addTask.finish == true && "concluido"}">
     
     <button class="botao-arrow" onclick="completeTask(${index})"><i class="fa-solid fa-circle-arrow-right"></i></button>
@@ -34,7 +34,7 @@ function delTask(index) {
 
 function addTask() {
   arrayAddTask.push({
-    addTask: input.value,
+    addTask: input.value + '',
     finish: false
   })
 
