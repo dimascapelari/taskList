@@ -33,8 +33,7 @@ function delTask(index) {
 
 function addTask() {
   arrayAddTask.push({
-    addTask: input.value,
-    index: 1,
+    addTask: '-> ' + input.value,
     finish: false
   })
 
