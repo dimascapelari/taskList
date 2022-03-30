@@ -55,6 +55,7 @@ function reloadTask() {
 
   viewTask()
 }
-reloadTask()
+
 button.addEventListener('click', addTask)
 
+reloadTask()
