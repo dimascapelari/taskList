@@ -8,6 +8,18 @@ if (teste == 'complete') {
   reloadTask()
 }
 */
+
+//sessionStorage.setItem('lista', JSON.stringify(arrayAddTask))
+//localStorage.setItem('lista', JSON.stringify(arrayAddTask))
+//localStorage.getItem('lista')
+
+var dados = localStorage.getItem('lista')
+
+if (dados == null) {
+  localStorage.setItem('lista', JSON.stringify(arrayAddTask))
+}
+
+
 reloadTask()
 
 function viewTask() {
