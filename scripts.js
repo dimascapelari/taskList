@@ -45,6 +45,9 @@ function addTask() {
 
   console.log(arrayAddTask)
   viewTask()
+
+  input.value = ''
+  input.focus()
 }
 
 function completeTask(index) {
