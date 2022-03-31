@@ -3,7 +3,12 @@ let button = document.getElementById('botao-adicionar')
 let task = document.getElementById('nome-tarefa-id')
 let fullList = document.getElementById('tarefas')
 let arrayAddTask = []
-reloadTask()
+let teste = document.readyState
+if (teste == 'complete') {
+  reloadTask()
+}
+
+
 
 function viewTask() {
   let newLi = ''
