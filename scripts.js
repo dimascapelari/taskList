@@ -3,22 +3,11 @@ let button = document.getElementById('botao-adicionar')
 let task = document.getElementById('nome-tarefa-id')
 let fullList = document.getElementById('tarefas')
 let arrayAddTask = []
-/*let teste = document.readyState
-if (teste == 'complete') {
-  reloadTask()
-}
-*/
-
-//sessionStorage.setItem('lista', JSON.stringify(arrayAddTask))
-//localStorage.setItem('lista', JSON.stringify(arrayAddTask))
-//localStorage.getItem('lista')
-
-var dados = localStorage.getItem('lista')
+let dados = localStorage.getItem('lista')
 
 if (dados == null) {
   localStorage.setItem('lista', JSON.stringify(arrayAddTask))
 }
-
 
 reloadTask()
 
@@ -42,7 +31,6 @@ function viewTask() {
   localStorage.setItem('lista', JSON.stringify(arrayAddTask))
 
 }
-
 
 function delTask(index) {
   arrayAddTask.splice(index, 1)
